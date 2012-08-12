@@ -16,6 +16,8 @@ class Shanty_Mongo_Iterator_Cursor implements OuterIterator
 	{
 		$this->_cursor = $cursor;
 		$this->_config = $config;
+		
+		$cursor->slaveOkay();
 	}
 	
 	/**
